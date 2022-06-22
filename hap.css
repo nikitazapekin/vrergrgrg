@@ -1,0 +1,372 @@
+body {
+
+    font-family: "Roboto", sans-serif, Castellar;
+    overflow-x: hidden;
+    background: linear-gradient(-45deg, #bafa09, #1cd517, #5e9a08, #045e25);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 150vh;
+    /* background: gold; */
+    /*  box-shadow: 0 -600px 2500px -520px crimson inset; */
+}
+
+.item {
+    text-align: center;
+    margin:auto;
+}
+@media screen and (max-width:600px ) and (min-width: 300px){
+    .slider {
+        max-width: 600px;
+        min-width: 400px;
+    }
+    .video {
+        max-width: 500px;
+
+    }
+    .pozdra {
+        min-width: 900px;
+        max-width: 1200px;
+    }
+}
+/*.beg1 {
+    position: relative;
+    margin: auto;
+    width: 1200px;
+} */
+.tort {
+    font-size: 44px;
+    border:10px solid black;
+    padding: 2rem 1rem;
+    min-height: 3em;
+    resize: both;
+    background: #ffd73e33;
+    /*border-image: url("") 1; */
+}
+
+.slider {
+    top: 250px;
+    left: 450px;
+    margin:auto;
+    height: 600px;
+    width: 500px;
+    display: inline-block;
+    /* justify-content: center; */
+    position: absolute;
+    justify-content: center;
+    border-radius: 10%;
+}
+.slider .item img {
+    border-radius: 10%;
+    margin:auto;
+    transition: 5s; /* Время эффекта */
+    display: block; /* Убираем небольшой отступ снизу */
+    border-radius: 10%;
+    object-fit: cover;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    -webkit-filter: brightness(120%);
+    filter: brightness(120%);
+}
+.slider .previous, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: 20px;
+    height: 100px;
+    marfin-top: -22px;
+    padding: 16px;
+    color: #db07fa;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+
+}
+.b{
+    position: relative;
+    top: 30px;
+}
+.slider .previous {
+    left: 0;
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.slider .next:hover, .slider .previous:hover {
+    background-color: #54d6f8;
+}
+.slider .item{
+    display: inline-block;
+
+    overflow: hidden;
+
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.item img:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */
+}
+.ct {
+    text-align: center;
+}
+.viz {
+    text-align: center;
+}
+.text {
+    white-space: nowrap;
+
+    display: inline-block;
+    top: 30px;
+    left: 250px;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    font-size: 75px;
+    font-family: 'Satisfy', cursive;
+    color: wheat;
+    animation: text-shadow 3s alternate infinite;
+
+}
+
+
+@keyframes text-shadow {
+    from {
+        text-shadow: 0px 0px 0px #000000,
+        0px 0px 0px #000000,
+        0px 0px 0px #000000;
+    }
+    to {
+        text-shadow: 4px 4px 10px #000000,
+        5px 5px 75px #fa5928,
+        -5px -5px 75px #fa5928;
+    }
+}
+.text1 {
+
+    text-align: center;
+    animation: width 3s alternate infinite;
+}
+
+
+
+.poz1{
+    /*  width:2000px; */
+
+    font-family: cursive;
+    font-size: 250%;
+    transition: 5s;
+    animation-name: poz1;
+    animation: poz1 5s alternate infinite;
+}
+@keyframes poz1 {
+    0%{
+        color: #4c067e;
+    }
+    10% {
+        color: #e7e132;
+    }
+    20%{
+        color: #0e6191;
+    }
+    30%{
+        color: #ad1818;
+    }
+    40%{
+        color: #f3f6f1;
+    }
+    50%{
+        color: #f38506;
+    }
+    60%{
+        color: #908aa1;
+    }
+    70%{
+        color: #ad1818;
+    }
+    80%{
+        color: #0e6191;
+    }
+    90%{
+        color: #e7e132;
+    }
+    100% {
+        color: #4c067e;
+    }
+}
+.pozdra {
+    position: relative;
+    top: 1200px;
+    width: 1800px;
+}
+
+@keyframes transf {
+    0%,100%{
+        transform: translateY(-40px);
+    }
+    50%{
+        transform: translateY(40px);
+    }
+}
+
+
+
+
+@keyframes transf1 {
+    0%,100%{
+        transform: translateY(-40px);
+    }
+    50%{
+        transform: translateY(40px);
+    }
+}
+
+@keyframes transf2 {
+    0%,100%{
+        transform: translateY(-40px);
+    }
+    50%{
+        transform: translateY(40px);
+    }
+}
+
+
+@keyframes transf3 {
+    0%,100%{
+        transform: translateY(-40px);
+    }
+    50%{
+        transform: translateY(40px);
+    }
+}
+
+.he {
+    position: relative;
+    right: 0;
+    display: inline-block;
+}
+.he1 {
+    position: relative;
+    top: -800px;
+    left: 1000px;
+    display: inline-block;
+}
+.he2 {
+    top: 300px;
+    position: absolute;
+    float: right;
+    display: inline-block;
+}
+.alert {
+    position: fixed;
+    height: 100px;
+    width: 100px;
+    background-color: #68fc17;
+    left: 0px;
+    top:205px;
+    transition: 3s;
+    cursor: pointer;
+    animation: alert 3s alternate infinite;
+}
+@keyframes alert {
+    from {
+        text-shadow: 0px 0px 0px #000000,
+        0px 0px 0px #000000,
+        0px 0px 0px #000000;
+    }
+    to {
+        text-shadow: 4px 4px 10px #000000,
+        5px 5px 75px #fa28e9,
+        -5px -5px 75px #da6bf6;
+    }
+}
+.alert:hover{
+    background-color: #ff0000;
+}
+.emg{
+    font-size: 400%;
+}
+.music{
+    height: 150px;
+    width: 400px;
+    /*  border: none; */
+}
+.mus {
+    border: none;
+    position: fixed;
+    top: 300px;
+    left: 0px;
+}
+
+.txt{
+    font-family: 'Satisfy', cursive;
+    color: wheat;
+    animation: txt 3s alternate infinite;
+    font-size: 200%;
+    top: -18px;
+    left: 20px;
+    position: relative;
+}
+
+
+.footer_bottom {
+
+
+    padding: 25px 0;
+
+    position:relative;
+    top: 300px;
+}
+.footer_bottom span {
+    display: block;
+    font-size: 14px;
+    color: #737070;
+    position: relative;
+    left: 700px;
+}
+.footer_bottom span a {
+    display: inline-block;
+    color: #737070;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+.footer_bottom span a:hover {
+    color: #fff;
+}
+
+
+.mg{
+    font-size: 150%;
+    transition: 3s;
+    text-decoration:  none;
+    /* text-align: center;
+     display: block; */
+    color: #fafa06;
+    position: relative;
+    top: 1600px;
+    left: 600px;
+}
+.butt {
+    position: relative;
+    height: 75px;
+    width: 200px;
+    background-color: transparent;
+    left: 625px;
+    top: 1350px;
+    border: 3px solid black;
+    font-family: Castellar;  color: #d2d0d0;
+    font-size: 125%;
+    animation: poz1 5s alternate infinite;
+}
+.butt:hover {
+    cursor: pointer;
+    height: 100px;
+    width: 250px;
+    font-size: 150%;
+    background-color: red;
+    transition: 3s;
+}
+
